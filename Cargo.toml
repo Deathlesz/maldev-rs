@@ -1,0 +1,16 @@
+[package]
+name = "maldev-rs"
+version = "0.1.0"
+authors = ["Deathlesz"]
+edition = "2021"
+description = "Code snippets showing different maldev stuff for Windows."
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[[bin]]
+name = "process_injection_with_shellcode"
+path = "src/process_injection/shellcode.rs"
+
+[dependencies]
+windows-sys = { version = "0.52", features = ["Win32_Foundation", "Win32_Security", "Win32_System_Threading", "Win32_System_Memory", "Win32_System_Diagnostics_Debug"] }
